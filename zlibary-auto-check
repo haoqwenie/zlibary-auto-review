@@ -1,0 +1,30 @@
+document.querySelector(".bordered-btn.download-btn.s1-process").click();//下载文件，需要禁止弹窗。
+//禁止弹窗
+document.querySelector("div[data-name='opens'] i[class='zlibicon-check']").click();//点击同意
+document.querySelector("div[data-name='is_book'] div[class='question__control question__control__good'] span").click();//点击同意
+//等待下一个同意元素出来，或者刷新两秒。
+document.querySelector(".publish").click();//点击发布
+document.querySelector(".btn-skip-task").click();//跳过网页
+location.reload();//刷新网页，进如下一个流程
+
+
+
+
+
+document.querySelector(".bordered-btn.download-btn.s1-process").click();
+    setTimeout(function(){
+        document.querySelector("div[data-name='opens'] i[class='zlibicon-check']").click();
+        setTimeout(function(){
+            document.querySelector("div[data-name='is_book'] div[class='question__control question__control__good'] span").click();
+            setTimeout(function(){
+                document.querySelector(".publish").click();
+                setTimeout(function(){
+                    document.querySelector(".btn-skip-task").click();
+                    setTimeout(function(){
+                        location.reload();
+                    }, 500);
+                }, 500);
+            }, 500);
+        }, 500);
+    }, 500);
+
