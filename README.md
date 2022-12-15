@@ -139,15 +139,14 @@ filetree
 
 ### 作者
 
-xxx@xxxx
+ruchid@qq.com
 
-知乎:xxxx  &ensp; qq:xxxxxx    
 
  *您也可以在贡献者名单中参看所有参与该项目的开发者。*
 
 ### 版权说明
 
-该项目签署了MIT 授权许可，详情请参阅 [LICENSE.txt](https://github.com/shaojintian/Best_README_template/blob/master/LICENSE.txt)
+该项目签署了MIT 授权许可，详情请参阅 [LICENSE.txt](https://github.com/haoqwenie/zlibary-auto-review/blob/b11be09ccf6700f4cff23759d322592a3b5c12cd/LICENSE.txt)
 
 ### 鸣谢
 
