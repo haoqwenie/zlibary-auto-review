@@ -1,8 +1,8 @@
 
 
-# ProjectName
+# zlibary-auto-check
 
-ProjectName and Description
+自动化审核zlibary
 
 <!-- PROJECT SHIELDS -->
 
@@ -104,7 +104,7 @@ filetree
 
 ### 开发的架构 
 
-请阅读[ARCHITECTURE.md](https://github.com/shaojintian/Best_README_template/blob/master/ARCHITECTURE.md) 查阅为该项目的架构。
+请阅读[ARCHITECTURE.md](https://github.com/haoqwenie/zlibary-auto-review/blob/a2572f6ae942248779a7359a8fa0c3e1518fd5e0/README.md) 查阅为该项目的架构。
 
 ### 部署
 
@@ -112,9 +112,8 @@ filetree
 
 ### 使用到的框架
 
-- [xxxxxxx](https://getbootstrap.com)
-- [xxxxxxx](https://jquery.com)
-- [xxxxxxx](https://laravel.com)
+- [tampermonkey](https://www.tampermonkey.net)
+
 
 ### 贡献者
 
