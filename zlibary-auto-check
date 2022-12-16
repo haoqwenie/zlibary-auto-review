@@ -1,4 +1,7 @@
-
+var downloadBtn = document.getElementById('download');
+downloadBtn.onclick = function() {
+  window.close();
+}
 document.querySelector(".bordered-btn.download-btn.s1-process").click();//下载文件，需要禁止弹窗。
     setTimeout(function(){
         document.querySelector("div[data-name='opens'] i[class='zlibicon-check']").click();//点击同意
