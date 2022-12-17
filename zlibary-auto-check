@@ -10,8 +10,8 @@ document.querySelector(".bordered-btn.download-btn.s1-process").click();//点击
                     document.querySelector(".btn-skip-task").click();//跳过此书籍
                     setTimeout(function(){
                         location.reload();//刷新网页，防止卡死
-                    }, 10000);//刷新时间如果为500、网页容易错误、所以换成了10000s
-                }, 10000);
-            }, 10000);
-        }, 10000);
-    }, 10000);
+                    }, 4000);//刷新时间如果为500、网页容易错误、所以换成了4000s
+                }, 4000);
+            }, 4000);
+        }, 4000);
+    }, 4000);
