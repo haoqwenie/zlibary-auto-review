@@ -1,7 +1,4 @@
-var a = document.createElement('a');
-a.href = 'http://www.example.com/file.zip';
-a.download = 'file.zip';
-a.click();//屏蔽网页下载
+document.querySelector(".bordered-btn.download-btn.s1-process").removeAttribute("href");//屏蔽网页下载按钮
 document.querySelector(".bordered-btn.download-btn.s1-process").click();//下载文件，需要禁止弹窗。
     setTimeout(function(){
         document.querySelector("div[data-name='opens'] i[class='zlibicon-check']").click();//点击同意
@@ -13,9 +10,8 @@ document.querySelector(".bordered-btn.download-btn.s1-process").click();//下载
                     document.querySelector(".btn-skip-task").click();//跳过此书籍
                     setTimeout(function(){
                         location.reload();//刷新网页，防止卡死
-                    }, 2000);//刷新时间如果为500，网页容易错误，所以换成了2000s
+                    }, 2000);//刷新时间如果为500、网页容易错误、所以换成了2000s
                 }, 2000);
-            }, 2000); 
+            }, 2000);
         }, 2000);
     }, 2000);
-
