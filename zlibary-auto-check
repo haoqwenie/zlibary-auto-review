@@ -1,4 +1,3 @@
-location.reload();//刷新网页，防止卡死
 document.querySelector(".bordered-btn.download-btn.s1-process").removeAttribute("href");//屏蔽网页下载按钮的下载属性
 document.querySelector(".bordered-btn.download-btn.s1-process").click();//点击下载文件按钮
     setTimeout(function(){
