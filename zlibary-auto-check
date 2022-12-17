@@ -1,5 +1,6 @@
-document.querySelector(".bordered-btn.download-btn.s1-process").removeAttribute("href");//屏蔽网页下载按钮
-document.querySelector(".bordered-btn.download-btn.s1-process").click();//下载文件，需要禁止弹窗。
+location.reload();//刷新网页，防止卡死
+document.querySelector(".bordered-btn.download-btn.s1-process").removeAttribute("href");//屏蔽网页下载按钮的下载属性
+document.querySelector(".bordered-btn.download-btn.s1-process").click();//点击下载文件按钮
     setTimeout(function(){
         document.querySelector("div[data-name='opens'] i[class='zlibicon-check']").click();//点击同意
         setTimeout(function(){
