@@ -1,4 +1,9 @@
- document.querySelector(".bordered-btn.download-btn.s1-process").removeAttribute("href");//屏蔽网页下载按钮的下载属性
+//生成100以内的随机数，如果大于50，刷新网页
+var random = Math.floor(Math.random()*100);
+if(random>50){
+    location.reload();//随机刷新，防止被检测为机器人
+} 
+document.querySelector(".bordered-btn.download-btn.s1-process").removeAttribute("href");//屏蔽网页下载按钮的下载属性
 document.querySelector(".bordered-btn.download-btn.s1-process").click();//点击下载文件按钮
     setTimeout(function(){
         document.querySelector("div[data-name='opens'] i[class='zlibicon-check']").click();//点击同意
@@ -6,11 +11,14 @@ document.querySelector(".bordered-btn.download-btn.s1-process").click();//点击
             document.querySelector("div[data-name='is_book'] div[class='question__control question__control__good'] span").click();//点击同意
             setTimeout(function(){
                 document.querySelector(".publish").click();//发布
+               //生成100以内的随机数，如果大于50，执行A，如果小于50，执行B
+                var random = Math.floor(Math.random()*100);
                 setTimeout(function(){
-                    document.querySelector(".btn-skip-task").click();//跳过此书籍
-                    setTimeout(function(){
+                if(random>50){
+                        document.querySelector(".btn-skip-task").click();//跳过此书籍
+                }else{
                         location.reload();//刷新网页，防止卡死
-                    }, 4000);//刷新时间如果为500、网页容易错误、所以换成了4000s
+                } ;//刷新时间如果为500、网页容易错误、所以换成了4000s
                 }, 4000);
             }, 4000);
         }, 4000);
