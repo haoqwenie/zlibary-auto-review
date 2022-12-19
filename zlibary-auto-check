@@ -1,8 +1,7 @@
-//生成100以内的随机数，如果大于50，刷新网页
-var random = Math.floor(Math.random()*100);
-if(random>50){
-    location.reload();//随机刷新，防止被检测为机器人
-} 
+//如果网页没有反应，重新加载网页
+if(document.querySelector(".bordered-btn.download-btn.s1-process").getAttribute("href")=="javascript:void(0);"){
+    location.reload();
+}
 document.querySelector(".bordered-btn.download-btn.s1-process").removeAttribute("href");//屏蔽网页下载按钮的下载属性
 document.querySelector(".bordered-btn.download-btn.s1-process").click();//点击下载文件按钮
     setTimeout(function(){
