@@ -1,8 +1,8 @@
-//生成100以内的随机数，如果小于30，刷新网页
-var random = Math.floor(Math.random()*100);
-if(random<30){
+// Version: 回到未来2
+//10秒后刷新网页
+setTimeout(function(){
     location.reload();//刷新网页，防止卡死
-};
+}, 30000);
 document.querySelector(".bordered-btn.download-btn.s1-process").removeAttribute("href");//屏蔽网页下载按钮的下载属性
 document.querySelector(".bordered-btn.download-btn.s1-process").click();//点击下载文件按钮
     setTimeout(function(){
@@ -23,7 +23,3 @@ document.querySelector(".bordered-btn.download-btn.s1-process").click();//点击
             }, 4000);
         }, 4000);
     }, 4000);
-//如果网页没有变化，刷新网页
-if(document.querySelector(".bordered-btn.download-btn.s1-process").getAttribute("href")=="javascript:void(0);"){
-    location.reload();//刷新网页，防止卡死
-};
